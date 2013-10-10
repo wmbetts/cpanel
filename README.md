@@ -1,7 +1,7 @@
 cPanel API package for Laravel 4
 ======
 
-cPanel API package for Laravel 4 by Adel KEDJOUR (a.kedjour@corex.dz) 
+cPanel API package for Laravel 4 by Adel KEDJOUR (a.kedjour@corex.dz) Edited by Jose Lara
 
 
 ## Installation
@@ -17,7 +17,7 @@ Next, update Composer from the Terminal:
 
     composer update
 
-Once this operation completes add the service provider, aliases and configuration file. 
+Once this operation completes add the service provider, aliases and configuration file.
 
 1 - Provider: Open `app/config/app.php`, and add a new item to the providers array.
 
@@ -66,7 +66,7 @@ return array(
     'http_client' => 'curl'
 
 );
-```	
+```
 
 That's it! You're all set to go.
 
@@ -78,7 +78,7 @@ That's it! You're all set to go.
 class CpanelController extends Controller {
 
     public function getListAccounts()
-    {        
+    {
          try {
 
                 $listaccts = array(json_decode(Cpanel::listaccts(), true));
@@ -86,7 +86,7 @@ class CpanelController extends Controller {
 
          } catch (Exception $e) {
                 return 'Exception: ' .$e->getMessage();
-         }      
+         }
 
     }
 
