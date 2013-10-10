@@ -1,4 +1,4 @@
-<?php namespace Joselara\Cpanel;
+<?php namespace JoseLara\Cpanel;
 
 use Illuminate\Support\ServiceProvider;
 
