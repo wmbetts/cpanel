@@ -1,4 +1,6 @@
-<?php namespace Illuminate\Support\Facades;
+<?php namespace Joselara\Cpanel\Facades;
+
+use Illuminate\Support\Facades\Facade;
 
 class Cpanel extends Facade {
 

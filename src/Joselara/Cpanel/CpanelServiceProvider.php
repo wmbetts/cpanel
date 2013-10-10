@@ -1,4 +1,4 @@
-<?php namespace Adelynx\Cpanel;
+<?php namespace Joselara\Cpanel;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,9 +20,9 @@ class CpanelServiceProvider extends ServiceProvider {
 	{
         $this->app['cpanel'] = $this->app->share(function($app)
         {
-            $host = $app['config']['cpanel.host'];
-            $user = $app['config']['cpanel.user'];
-            $password = $app['config']['cpanel.auth'];
+            $host = $app['config']['joselara/cpanel::host'];
+            $user = $app['config']['joselara/cpanel::user'];
+            $password = $app['config']['joselara/cpanel::auth'];
 
             return new Cpanel($host, $user, $password);
         });
@@ -35,7 +35,7 @@ class CpanelServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('adelynx/cpanel');
+        $this->package('Joselara/cpanel');
     }
 
 	/**

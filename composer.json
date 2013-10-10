@@ -1,10 +1,10 @@
 {
-    "name": "adelynx/cpanel",
-    "description": "cPanel API Package",
+    "name": "joselara/cpanel",
+    "description": "cPanel API Package for Laravel",
     "authors": [
         {
-            "name": "Adel KEDJOUR",
-            "email": "a.kedjour@corex.dz"
+            "name": "Jose Lara",
+            "email": "jose.lara@gmail.com"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Adelynx\\Cpanel": "src/"
+            "Joselara\\Cpanel": "src/"
         }
     },
     "minimum-stability": "dev"

@@ -1,4 +1,4 @@
-<?php namespace Adelynx\Cpanel;
+<?php namespace Joselara\Cpanel;
 
 class Cpanel {
 
