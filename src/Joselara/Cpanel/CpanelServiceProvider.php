@@ -20,9 +20,9 @@ class CpanelServiceProvider extends ServiceProvider {
 	{
         $this->app['cpanel'] = $this->app->share(function($app)
         {
-            $host = $app['config']['joselara/cpanel::host'];
-            $user = $app['config']['joselara/cpanel::user'];
-            $password = $app['config']['joselara/cpanel::auth'];
+            $host = $app['config']['cpanel::host'];
+            $user = $app['config']['cpanel::user'];
+            $password = $app['config']['cpanel::auth'];
 
             return new Cpanel($host, $user, $password);
         });
@@ -35,7 +35,7 @@ class CpanelServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('Joselara/cpanel');
+        $this->package('JoseLara/cpanel','cpanel');
     }
 
 	/**
@@ -45,7 +45,7 @@ class CpanelServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('cpanel');
 	}
 
 }
