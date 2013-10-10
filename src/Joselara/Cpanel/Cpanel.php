@@ -1,4 +1,4 @@
-<?php namespace Joselara\Cpanel;
+<?php namespace JoseLara\Cpanel;
 
 class Cpanel {
 
