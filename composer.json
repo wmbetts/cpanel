@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "JoseLara": "src/"
+            "JoseLara\\Cpanel": "src/"
         }
     },
     "minimum-stability": "dev"
