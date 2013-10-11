@@ -35,7 +35,7 @@ class CpanelServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('JoseLara/cpanel','cpanel');
+        $this->package('JoseLara/cpanel');
     }
 
 	/**
