@@ -1,5 +1,7 @@
 <?php namespace JoseLara\Cpanel;
 
+use Exception;
+
 class Cpanel {
 
     // should debugging statements be printed?
