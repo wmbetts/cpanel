@@ -1,13 +1,11 @@
-cPanel API package for Laravel 4
+another cPanel API package for Laravel 4
 ======
-
-cPanel API package for Laravel 4 by Adel KEDJOUR (a.kedjour@corex.dz)
-Edited by Jose Lara
+originally forked from https://github.com/adelynx/cpanel
 
 
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `adelynx/cpanel`.
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `joselara/cpanel-laravel`.
 
     "require": {
 		"laravel/framework": "4.0.*",
@@ -26,7 +24,7 @@ Once this operation completes add the service provider, aliases and configuratio
 
 2 - Provider: Open `app/config/app.php`, and add a new item to the facade array.
 
-    'Cpanel' => 'Illuminate\Support\Facades\Cpanel',
+    'Cpanel' => 'JoseLara\Cpanel\Facades\Cpanel',
 
 3 - Publish Config
 

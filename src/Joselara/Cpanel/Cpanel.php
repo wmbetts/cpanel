@@ -5,32 +5,32 @@ use Exception;
 class Cpanel {
 
     // should debugging statements be printed?
-    private $debug    		= false;
+    private $debug       = false;
 
     // The host to connect to
-    private $host				=	'127.0.0.1';
+    private $host        =	'127.0.0.1';
 
     // the port to connect to
-    private $port				=	'2087';
+    private $port        =	'2087';
 
     // should be the literal strings http or https
-    private $protocol		=	'https';
+    private $protocol    =	'https';
 
     // output that should be given by the xml-api
-    private $output		=	'json';
+    private $output      =	'json';
 
     // literal strings hash or password
-    private $auth_type 	= null;
+    private $auth_type   = null;
 
     //  the actual password or hash
-    private $auth 			= null;
+    private $auth        = null;
 
     // username to authenticate as
-    private $user				= null;
+    private $user        = null;
 
     // The HTTP Client to use
 
-    private $http_client		= 'curl';
+    private $http_client = 'curl';
 
     /**
     * Instantiate the XML-API Object
