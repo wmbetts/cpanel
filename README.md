@@ -1,4 +1,4 @@
-another cPanel API package for Laravel 4
+cPanel API package for Laravel 4
 ======
 originally forked from https://github.com/adelynx/cpanel
 

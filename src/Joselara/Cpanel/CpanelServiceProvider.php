@@ -20,9 +20,9 @@ class CpanelServiceProvider extends ServiceProvider {
 	{
         $this->app['cpanel'] = $this->app->share(function($app)
         {
-            $host = $app['config']['cpanel::host'];
-            $user = $app['config']['cpanel::user'];
-            $password = $app['config']['cpanel::auth'];
+            $host = $app['config']['cpanel-laravel::host'];
+            $user = $app['config']['cpanel-laravel::user'];
+            $password = $app['config']['cpanel-laravel::auth'];
 
             return new Cpanel($host, $user, $password);
         });
